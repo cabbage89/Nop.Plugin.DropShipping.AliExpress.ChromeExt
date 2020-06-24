@@ -1,0 +1,38 @@
+{
+  "author": "https://github.com/cabbage89/Nop.Plugin.DropShipping.AliExpress.Doc",
+  "background": {
+    "scripts": [ "jquery-3.5.0.min.js", "background.js" ]
+  },
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_title": "ProductHunter",
+    "default_popup": "popup.html"
+  },
+  "description": "__MSG_pluginDesc__",
+  "manifest_version": 2,
+  "name": "__MSG_pluginName__",
+  "short_name": "nopProductSync",
+  "permissions": [
+    "http://*/",
+    "https://*/",
+    "webRequest",
+    "tabs",
+    "contextMenus",
+    "webRequestBlocking",
+    "storage"
+  ],
+  "default_locale": "en",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [ "https://www.alibaba.com/product-detail/*" ],
+      "js": [ "jquery-3.5.0.min.js", "constant.js", "market/alibaba.js" ],
+      "css": [ "main.css" ]
+    },
+    {
+      "matches": [ "https://www.aliexpress.com/item/*" ],
+      "js": [ "jquery-3.5.0.min.js", "constant.js", "market/aliexpress.js" ],
+      "css": [ "main.css" ]
+    }
+  ]
+}

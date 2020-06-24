@@ -1,0 +1,13 @@
+﻿{
+  "pluginName": { "message": "nopCommerce Product Sync" },
+  "pluginDesc": { "message": "Synchronize product information to nopCommerce" },
+  "SyncToNop": { "message": "Sync To Nop" },
+  "Synchronizing": { "message": "Synchronizing" },
+  "RetrySync": { "message": "Retry sync" },
+  "Synced": { "message": "Synced" },
+  "SyncLatest": { "message": "Sync latest" },
+  "ViewInNop": { "message": "View in nop" },
+  "EditInNop": { "message": "Edit in nop" },
+  "skuExisted": { "message": "SKU: {0} is already in the product library, the product Id is: {1}" },
+  "configErr": { "message": "API config error" }
+}

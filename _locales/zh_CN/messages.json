@@ -1,0 +1,13 @@
+﻿{
+  "pluginName": { "message": "nopCommerce产品同步" },
+  "pluginDesc": { "message": "同步产品信息到nopCommerce" },
+  "SyncToNop": { "message": "上架" },
+  "Synchronizing": { "message": "上架中..." },
+  "RetrySync": { "message": "上架重试" },
+  "Synced": { "message": "已上架" },
+  "SyncLatest": { "message": "更新资料" },
+  "ViewInNop": { "message": "查看我的" },
+  "EditInNop": { "message": "编辑我的" },
+  "skuExisted": { "message": "SKU:{0}已在产品库中,产品Id为:{1}" },
+  "configErr": { "message": "API配置错误" }
+}

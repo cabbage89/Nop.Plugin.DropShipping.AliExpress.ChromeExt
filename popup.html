@@ -1,0 +1,27 @@
+﻿<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <script type="text/javascript" src="jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+</head>
+<body class="container-fluid" style="width:500px;">
+    <div class="row flex-xl-nowrap">
+        <form class="col-md-12">
+            <div class="form-group">
+                <label for="input_url">nopCommerce base url</label>
+                <input type="url" class="form-control" id="input_url" aria-describedby="urlHelp" />
+                <small id="urlHelp" class="form-text text-muted">eg. https://www.yourstore.com</small>
+            </div>
+            <div class="form-group">
+                <label for="input_token">Access token</label>
+                <input type="text" class="form-control" id="input_token" aria-describedby="tokenHelp" />
+                <small id="tokenHelp" class="form-text text-muted">Chrome extension calls nopCommerce API access token,Get it in the plugin configuration page.</small>
+            </div>
+            <button type="button" id="btn_save" class="btn btn-primary">Save</button>
+            <div class="alert alert-success" id="save_success" style="display:none" role="alert">
+                Save Success!
+            </div>
+        </form>
+    </div>
+</body>
+</html>
