@@ -42,7 +42,7 @@ $(function () {
           $btn_upload.parent().removeClass('tbc_loader');
           if (!result.success) {
             console.error(`======产品上架失败======`);
-            console.error(result);
+            console.error(result && result.XMLHttpRequest && result.XMLHttpRequest.responseText);
             $btn_upload.css({ backgroundColor: 'palevioletred' }).attr({ title: result.XMLHttpRequest.statusText }).text(T('RetrySync'));
           } else {
             $btn_upload.css({ backgroundColor: 'gray' }).attr({ disabled: 'disabled', title: `${result.data.Sku}上架成功,产品Id为:${result.data.Id}` }).text(T('Synced'));
